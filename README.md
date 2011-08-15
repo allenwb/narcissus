@@ -8,7 +8,8 @@ Originally a proof-of-concept by [Brendan Eich](http://brendaneich.com/), Narcis
 
 # Usage
 
-To run the Narcissus shell, install the [SpiderMonkey shell](https://developer.mozilla.org/en/Introduction_to_the_JavaScript_shell) (note that pre-built versions of the shell are available in the Firefox nightly builds, for example <http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/jsshell-win32.zip> or <http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/jsshell-mac.zip>). After bbuilding or downloading set the `NJS_SHELL` environment variable to the path to the `js` executable, or creating a symbolic link to `js` in the top-level Narcissus directory. Then run Narcissus with the `njs` script.
+To run the Narcissus shell, install the [SpiderMonkey shell](https://developer.mozilla.org/en/Introduction_to_the_JavaScript_shell) (note that pre-built versions of the shell are available in the Firefox nightly builds,
+for example <http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/jsshell-win32.zip> or <http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/jsshell-mac.zip>). After building or downloading set the `NJS_SHELL` environment variable to the path to the `js` executable, or creating a symbolic link to `js` in the top-level Narcissus directory. Then run Narcissus with the `njs` script.
 
     Usage: njs
     

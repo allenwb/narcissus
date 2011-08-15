@@ -11,19 +11,23 @@ other Harmony features such as `const` and `let` declarations.
 Object literals now have a shorthand for defining data properties that are intended to use as methods.
 The shorthand allows the keyword `function` and the colon to be omitted. A
 object literal that previously might have been defined as:
+
     var obj = {
         doSomething: function (arg) {
            arg.doSomethingElse();
         },
         anotherMethod: function() {return "another"}
     };
+    
 can now be written as:
+
     var obj = {
         ddoSomething(arg) {
            arg.doSomethingElse();
         },
         anotherMethod() {return "another"}
     };
+    
 There is an additional difference.  Properties defined in this manner are not enumerable by for-in.
 They are also non-writable and non-configurable.
 
@@ -33,6 +37,7 @@ They are also non-writable and non-configurable.
 Within an object literal the comma that separates individual property definitions is optional after
 method and accessor property definitions.
 For example this:
+
     var obj = {
         a: 0,
         __foo: null,
@@ -44,6 +49,7 @@ For example this:
     }
     
 means exactly the same thing as:
+
     var obj = {
         a: 0,
         __foo: null,
@@ -68,6 +74,7 @@ of the function is set to a new object whose \[\[Prototype\]\] is the value of t
 property.
 
 Example:
+
     // create a object that inherits from Array prototype
     let XArray = Array.prototype <| {
         fill (value) {for (var i=this.length;i>0;) this[--i]=value}
