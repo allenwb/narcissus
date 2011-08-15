@@ -2,11 +2,13 @@
 
 Narcissus is a JavaScript interpreter written in pure JavaScript (i.e., a [meta-circular evaluator](http://en.wikipedia.org/wiki/Meta-circular_evaluator)), using the [SpiderMonkey](http://www.mozilla.org/js/spidermonkey/) engine.
 
+This verson of Narcissus adds various experimental features that have been proposed for ES Harmony.  See `harmony.md` for a list of new features.
+
 Originally a proof-of-concept by [Brendan Eich](http://brendaneich.com/), Narcissus is being revived as a test-bed for rapidly prototyping new language features for the JavaScript language (as well as the ECMAScript standard).
 
 # Usage
 
-To run the Narcissus shell, install the [SpiderMonkey shell](https://developer.mozilla.org/en/Introduction_to_the_JavaScript_shell) and either set the `NJS_SHELL` environment variable to the path to the `js` executable, or creating a symbolic link to `js` in the top-level Narcissus directory. Then run Narcissus with the `njs` script.
+To run the Narcissus shell, install the [SpiderMonkey shell](https://developer.mozilla.org/en/Introduction_to_the_JavaScript_shell) (note that pre-built versions of the shell are available in the Firefox nightly builds, for example <http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/jsshell-win32.zip> or <http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/jsshell-mac.zip>). After bbuilding or downloading set the `NJS_SHELL` environment variable to the path to the `js` executable, or creating a symbolic link to `js` in the top-level Narcissus directory. Then run Narcissus with the `njs` script.
 
     Usage: njs
     
@@ -36,3 +38,4 @@ More to come.
 * Dave Herman
 * Dimitris Vardoulakis
 * Patrick Walton
+* Allen Wirfs-Brock
